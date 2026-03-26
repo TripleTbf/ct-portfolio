@@ -6,13 +6,15 @@ body {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    min-height: 90vh;
+    min-height: 100vh;
+    padding: 20px;
 }
 
 header,
 footer {
     display: flex;
     justify-content: space-between;
+    padding: 10px 0;
 }
 
 .container {
@@ -100,4 +102,56 @@ h1 {
     border-radius: 50%;
     border: 3px solid #00bfff;
     margin-bottom: 20px;
+}
+
+/* About Section */
+#about {
+    text-align: center;
+}
+
+#about img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    border: 3px solid #00bfff;
+    margin-bottom: 20px;
+}
+
+#about p {
+    font-size: 16px;
+    margin: 10px 0;
+}
+
+#about p:first-of-type {
+    font-size: 24px;
+    font-weight: bold;
+    color: #00bfff;
+}
+
+#about p:nth-of-type(2) {
+    font-size: 18px;
+    color: #b0b0b0;
+}
+
+.container {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+    background-image: linear-gradient(to right, #8A00c4, #4B0089);
+    padding: 30px;
+    border-radius: 15px;
+}
+
+.item {
+    width: 300px;
+    height: 300px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 24px;
+    color: white;
+    /* FIXED: Corrected the missing color and double comma */
+    background-image: linear-gradient(35deg, #c4009c, #bc13fe);
+    border-radius: 10px;
+    overflow: hidden;
 }
