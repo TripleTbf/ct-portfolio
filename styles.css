@@ -57,11 +57,8 @@ p {
 
 :root {
     --bg-color: #0d0e21;
-    /* Dark background */
     --accent-color: #30CFD0;
-    /* Bright cyan accent */
     --text-color: #ffffff;
-    /* White text */
 }
 
 body {
@@ -70,26 +67,8 @@ body {
 }
 
 body {
-    font-family: 'Raleway', sans-serif;
+    font-family: 'Segoe UI', sans-serif;
 }
-
-h1 {
-    text-transform: uppercase;
-    font-weight: light;
-}
-
-.text-glow {
-    text-shadow: 0 0 80px rgb(192 219 255 / 75%), 0 0 32px rgb(65 120 255 / 24%);
-}
-
-.btn-glow:hover {
-    box-shadow: rgba(48, 207, 208, 0.5) 0px 0px 20px 0px;
-}
-
-.angled-div {
-    clip-path: polygon(0 0, 100% 0, 100% 85%, 0% 100%);
-}
-
 
 /* About Section */
 #about {
@@ -137,21 +116,65 @@ h1 {
     display: flex;
     gap: 20px;
     flex-wrap: wrap;
-    background-image: linear-gradient(to right, #8A00c4, #4B0089);
+    background-image: linear-gradient(to right, #191970, #00316E);
     padding: 30px;
     border-radius: 15px;
 }
 
 .item {
-    width: 300px;
+    width: 500px;
     height: 300px;
     display: flex;
     align-items: center;
     justify-content: center;
     font-size: 24px;
     color: white;
-    /* FIXED: Corrected the missing color and double comma */
-    background-image: linear-gradient(35deg, #c4009c, #bc13fe);
+    background-image: linear-gradient(35deg, #03002e, #001C57);
     border-radius: 10px;
     overflow: hidden;
+}
+
+header {
+    background: linear-gradient(135deg, #0f172a, #1e293b, #334155);
+    color: white;
+    padding: 16px 24px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 15px;
+}
+
+.links {
+    display: flex;
+    gap: 15px;
+}
+
+.links a {
+    font-size: 17px;
+    color: #f0f5f7;
+    text-decoration: none;
+    background-color: #022866;
+    border-radius: 6px;
+    border: 2px solid transparent;
+    transition: background-color 0.3s ease, transform 0.2s ease, border-color 0.3s ease;
+    padding: 10px 20px;
+    font-weight: 501;
+}
+
+.links a:hover {
+    border-color: #0ea5e9;
+    color: #0ea5e9;
+    transform: translateY(-2px);
+}
+
+.links a:active {
+    transform: translateY(0);
+}
+
+.about-container {
+    background: linear-gradient(135deg, #000000, #012c72, #00214e);
+    color: white;
+    padding: 30px;
+    border-radius: 15px;
+    text-align: center;
 }
